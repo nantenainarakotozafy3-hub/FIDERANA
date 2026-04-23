@@ -1,7 +1,17 @@
 * { box-sizing: border-box; }
 body { 
-    margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    background: #f8f9fa; height: 100vh; display: flex; flex-direction: column; 
+    font-family: 'Poppins', sans-serif; 
+}
+
+h1, h2 {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+pre {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    font-size: 1.1rem;
 }
 
 header { background: #1877f2; color: white; padding: 15px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
@@ -36,3 +46,12 @@ pre {
 .nav-item { font-size: 0.75rem; color: #65676b; cursor: pointer; text-align: center; }
 
 .btn-back { border: none; background: none; color: #1877f2; font-weight: bold; cursor: pointer; margin-bottom: 15px; font-size: 1rem; }
+
+pre {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 5px solid #1877f2;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.02);
+    color: #2c3e50;
+}
