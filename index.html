@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIDERANA FIDERANA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="app-title">FIDERANA FANANTENANA</h1>
+    </header>
+
+    <main id="main-content">
+        <div id="home-page">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Tadiavo ny hira..." onkeyup="hikaroka()">
+            </div>
+            <div id="lisitraHira" class="list-container"></div>
+        </div>
+
+        <div id="detail-page" style="display: none;">
+            <button class="btn-back" onclick="hody()">← Hiverina</button>
+            <h2 id="view-lohateny"></h2>
+            <p id="view-mpihira"></p>
+            <hr>
+            <pre id="view-tononkira"></pre>
+        </div>
+    </main>
+
+    <nav class="bottom-nav">
+        <div class="nav-item" onclick="hody()">🏠 Fandraisana</div>
+        <div class="nav-item">❤️ Tiako</div>
+        <div class="nav-item">⚙️ Settings</div>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
