@@ -55,3 +55,22 @@ pre {
     box-shadow: inset 0 0 10px rgba(0,0,0,0.02);
     color: #2c3e50;
 }
+
+.btn-back {
+    border: none;
+    background: none;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.img-back {
+    width: 30px;
+    height: auto;
+    transition: transform 0.2s;
+}
+
+.img-back:active {
+    transform: scale(0.9);
+}
