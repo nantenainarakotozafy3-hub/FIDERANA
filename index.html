@@ -6,7 +6,10 @@
     <title>FIDERANA FIDERANA</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1877f2">
 </head>
+
 <body>
 
     <header>
@@ -34,5 +37,10 @@
     </main>
 
     <script src="script.js"></script>
+    <script>
+        if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js');
+    }
+    </script>
 </body>
 </html>
