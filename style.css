@@ -1,76 +1,146 @@
-* { box-sizing: border-box; }
-body { 
-    font-family: 'Poppins', sans-serif; 
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
 }
 
-h1, h2 {
+body { 
+    font-family: 'Poppins', sans-serif; 
+    background-color: #f0f2f5;
+    color: #1c1e21;
+}
+
+header { 
+    background: #1877f2; 
+    color: white; 
+    padding: 15px; 
+    text-align: center; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    position: relative;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 1px;
 }
 
-pre {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.8;
-    font-size: 1.1rem;
+.btn-back {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent !important; /* Terena ho tsy misy loko ny bokotra */
+    border: none !important;             /* Esorina ny sisiny fotsy */
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    z-index: 10;
 }
 
-header { background: #1877f2; color: white; padding: 15px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+.img-back {
+    width: 35px; /* Habe antonony ho an'ilay sary home.png */
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Raha te-hampisy zoro boribory kely amin'ilay maitso */
+    
+    /* Raha misy sisiny fotsy be ilay sary, ity no manaisotra azy 
+       mba hifangaro amin'ilay manga eo aoriany: */
+    mix-blend-mode: multiply; 
+}
 
-main { flex: 1; overflow-y: auto; padding: 15px; padding-bottom: 80px; }
+.img-back:active {
+    transform: scale(0.9);
+}
 
-.search-container { margin-bottom: 20px; }
+main { 
+    padding: 15px; 
+    padding-bottom: 80px; 
+}
+
+.search-container { 
+    margin-bottom: 20px; 
+}
+
 #searchInput { 
-    width: 100%; padding: 12px 20px; border-radius: 25px; 
-    border: 1px solid #ddd; outline: none; font-size: 1rem;
+    width: 100%; 
+    padding: 12px 20px; 
+    border-radius: 25px; 
+    border: 1px solid #ddd; 
+    outline: none; 
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .hira-card { 
-    background: white; padding: 15px; border-radius: 12px; margin-bottom: 12px;
-    display: flex; flex-direction: column; box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    cursor: pointer; transition: transform 0.2s;
+    background: white; 
+    padding: 15px; 
+    border-radius: 12px; 
+    margin-bottom: 12px;
+    display: flex; 
+    flex-direction: column; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    cursor: pointer; 
+    transition: transform 0.2s;
 }
+
 .hira-card:active { transform: scale(0.98); }
-.hira-card span { color: #65676b; font-size: 0.85rem; margin-top: 4px; }
 
-pre { 
-    background: white; padding: 20px; border-radius: 12px; 
-    white-space: pre-line; font-size: 1.1rem; line-height: 1.6;
-    color: #333;
+.hira-card h2 { 
+    font-size: 1.1rem; 
+    color: #1877f2; 
 }
 
-.bottom-nav { 
-    position: fixed; bottom: 0; width: 100%; background: white; 
-    display: flex; justify-content: space-around; padding: 12px; 
-    border-top: 1px solid #eee;
+.hira-card span { 
+    color: #65676b; 
+    font-size: 0.85rem; 
+    margin-top: 4px; 
 }
-.nav-item { font-size: 0.75rem; color: #65676b; cursor: pointer; text-align: center; }
 
-.btn-back { border: none; background: none; color: #1877f2; font-weight: bold; cursor: pointer; margin-bottom: 15px; font-size: 1rem; }
+#view-lohateny {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    color: #1c1e21;
+}
+
+#view-mpihira {
+    color: #65676b;
+    margin-bottom: 15px;
+}
 
 pre {
     background: #ffffff;
     padding: 25px;
     border-radius: 15px;
     border-left: 5px solid #1877f2;
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.02);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     color: #2c3e50;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    white-space: pre-line;
 }
 
-.btn-back {
-    border: none;
-    background: none;
-    padding: 5px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+.bottom-nav { 
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    background: white; 
+    display: flex; 
+    justify-content: space-around; 
+    padding: 12px; 
+    border-top: 1px solid #eee;
+    z-index: 100;
 }
 
-.img-back {
-    width: 30px;
-    height: auto;
-    transition: transform 0.2s;
-}
-
-.img-back:active {
-    transform: scale(0.9);
+.nav-item { 
+    font-size: 0.75rem; 
+    color: #65676b; 
+    cursor: pointer; 
+    text-align: center; 
 }
