@@ -48,13 +48,21 @@ function hamakyHira(id) {
     document.getElementById('home-page').style.display = 'none';
     document.getElementById('detail-page').style.display = 'block';
     
+    document.getElementById('btn-back-header').style.display = 'flex'; 
+    
     document.getElementById('view-lohateny').innerText = hira.title;
     document.getElementById('view-mpihira').innerText = hira.artist || '';
     
     document.getElementById('view-tononkira').innerText = hira.lyrics.join('\n');
+    
+    window.scrollTo(0, 0);
 }
 
 function hody() {
     document.getElementById('home-page').style.display = 'block';
     document.getElementById('detail-page').style.display = 'none';
+    
+    document.getElementById('btn-back-header').style.display = 'none';
+    
+    window.scrollTo(0, 0);
 }
