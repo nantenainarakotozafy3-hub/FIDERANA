@@ -1,4 +1,4 @@
-const CACHE_NAME = 'fiderana-v3';
+const CACHE_NAME = 'fiderana-v1';
 const assets = [
   './',
   './index.html',
