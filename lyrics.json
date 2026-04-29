@@ -319,7 +319,7 @@
         "Madama sa ramose? (ehhhh) Ahoana ianao ramose? (ehhhhh)",
         "Sao tsy lasa any vao hoe:",
         "LOZA BE! LOZA BE!"
-     ]
+    ]
     },
     {
       "id": 7,
@@ -424,7 +424,7 @@
         "Avelao hahazo laka ny fiderana",
         "Ilay Mpanjakan'ny Mpanjaka",
         "Asandrato amin’ny feo tsara rindra",
-        "(Ilay Tompontsika e)",
+         "(Ilay Tompontsika e)",
         "Ilay Tompo tsara indrindra",
         "Avelao hahazo laka ilay fiderana",
         "Ilay Mpanjakan'ny mpanjaka",
@@ -1267,8 +1267,68 @@
         "Izahay eto foana a, izahay eto foana",
         "Ianareo tsy mahandry ny Tompo f’efa leo e",
         "Izahay mbola noana, mitady Azy foana"
+      ]
+    },
+    {
+      "id": 22,
+      "title": "NY HASTARANAO",
+      "artist": "VDL",
+      "lyrics": [
+        "Eyyh Aleloia",
+        "Fa tsara ny mihira ho an'Andriamanitsika",
+        "Mamy anie sady mendrika",
+        "Ndao ary e",
+        "",
+        "Oh Yah Eh Ah Yeh (x8)",
+        "",
+        "[Oay zany hatsaranao Jesosy ô]",
+        "Oay zany hatsaranao Jesosy ô",
+        "[Endrey zany hatsaranao Jesosy ô]",
+        "Endrey zany hatsaranao Jesosy ô",
+        "",
+        "Fa ny tranonao tsy maintsy ho vita",
+        "Izaho koa tsy maintsy ho tafita",
+        "Reharehako ny fisianao",
+        "Iainga ary isika izao",
+        "Mirehitra ato anatiko",
+        "Fahasoavan-dehibe",
+        "",
+        "",
+        "(x2)",
+        "[Aleloia]",
+        "Aleloia",
+        "Efa akaiky ny fandresena",
+        "Fa miandry ahy ilay toerako",
+        "Fa miandry ahy ilay toerako",
+        "",
+        "(interlude)",
+        "",
+        "Fa ny tranonao tsy maintsy ho vita",
+        "Izaho koa tsy maintsy ho tafita",
+        "Reharehako ny fisianao",
+        "Iainga ary isika izao",
+        "Mirehitra ato anatiko",
+        "Fahasoavan-dehibe",
+        "",
+        "Lehibe yyy",
+        "",
+        "Aleloia",
+        "Aleloia",
+        "Efa akaiky ny fandresena",
+        "Fa miandry ahy ilay toerako",
+        "Fa miandry ahy ilay toerako",
+        "",
+        "Aleloia",
+        "Aleloia",
+        "Efa akaiky ny fandresena",
+        "Fa miandry ahy ilay toerako",
+        "Fa miandry ahy ilay toerako",
+        "",
+        "Fa miandry ahy ilay toerako",
+        "",
+        "Fa miandry ahy ilay toerako"
+      ]
+    }
   ]
-}
-    ]
 }
 
