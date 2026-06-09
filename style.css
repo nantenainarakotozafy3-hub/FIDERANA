@@ -16,11 +16,13 @@ header {
     padding: 15px; 
     text-align: center; 
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
-    position: relative;
+    position: sticky;
+    top: 0;
     min-height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1000;
 }
 
 h1 {
@@ -34,8 +36,8 @@ h1 {
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
-    background: transparent !important; /* Terena ho tsy misy loko ny bokotra */
-    border: none !important;             /* Esorina ny sisiny fotsy */
+    background: transparent !important;
+    border: none !important;
     padding: 0;
     cursor: pointer;
     display: flex;
@@ -44,13 +46,10 @@ h1 {
 }
 
 .img-back {
-    width: 35px; /* Habe antonony ho an'ilay sary home.png */
+    width: 35px;
     height: auto;
     display: block;
-    border-radius: 8px; /* Raha te-hampisy zoro boribory kely amin'ilay maitso */
-    
-    /* Raha misy sisiny fotsy be ilay sary, ity no manaisotra azy 
-       mba hifangaro amin'ilay manga eo aoriany: */
+    border-radius: 8px;
     mix-blend-mode: multiply; 
 }
 
@@ -103,14 +102,33 @@ main {
 }
 
 #view-lohateny {
-    margin-top: 10px;
+    position: sticky;
+    top: 60px;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding-top: 15px;
     font-size: 1.4rem;
     color: #1c1e21;
+    z-index: 900;
 }
 
 #view-mpihira {
+    position: sticky;
+    top: 100px;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding-bottom: 10px;
     color: #65676b;
-    margin-bottom: 15px;
+    z-index: 900;
+}
+
+#detail-page hr {
+    position: sticky;
+    top: 135px;
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 0 0 15px 0;
+    z-index: 900;
 }
 
 pre {
@@ -124,6 +142,7 @@ pre {
     line-height: 1.8;
     font-size: 1.1rem;
     white-space: pre-line;
+    margin-top: 5px;
 }
 
 .bottom-nav { 
